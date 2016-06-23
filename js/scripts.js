@@ -1,14 +1,17 @@
 //Back-end
-
 var pig_latin = function(x) {
-  return false;
 
+  if (x[0] === "a" || x[0] === "e" || x[0] === "i" || x[0] === "o" || x[0] === "u" ) {
+    return x + "ay";
+  } else {
+    return false;
+  }
 };
 
 
 
 
-//User Interface
+//User-interface
 $(document).ready(function () {
   $("form#translator").submit(function(event) {
     event.preventDefault();
